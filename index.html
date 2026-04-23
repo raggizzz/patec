@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#050814" />
+<title>PaTec — Parque Tecnológico de Robótica de Brasília</title>
+<meta name="description" content="PaTec é um parque tecnológico de robótica em Brasília. Conectamos escolas, startups, estudantes, professores e empresas para democratizar o acesso à tecnologia." />
+<meta property="og:title" content="PaTec — Parque Tecnológico de Robótica de Brasília" />
+<meta property="og:description" content="Robótica, educação e inovação para transformar Brasília. Escolas, startups, estudantes, professores e empresas em um só ecossistema." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/logos/logo-full.png" />
+<link rel="icon" type="image/png" href="assets/logos/logo-white-round.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260423d" />
+</head>
+<body>
+
+<!-- loader -->
+<div class="loader" id="loader">
+  <div class="loader__logo">
+    <img src="assets/logos/logo-white-round.png" alt="PaTec" />
+  </div>
+  <div class="loader__bar"><span></span></div>
+</div>
+
+<!-- scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- mouse glow -->
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- section indicator -->
+<aside class="dots" id="dots" aria-hidden="true">
+  <a href="#top" data-target="top"><span></span><i>Início</i></a>
+  <a href="#sobre" data-target="sobre"><span></span><i>Sobre</i></a>
+  <a href="#missoes" data-target="missoes"><span></span><i>Missões</i></a>
+  <a href="#oferta" data-target="oferta"><span></span><i>Atuação</i></a>
+  <a href="#espaco" data-target="espaco"><span></span><i>Espaço</i></a>
+  <a href="#tecnologia" data-target="tecnologia"><span></span><i>Tecnologia</i></a>
+  <a href="#impacto" data-target="impacto"><span></span><i>Impacto</i></a>
+  <a href="#depoimentos" data-target="depoimentos"><span></span><i>Ecossistema</i></a>
+  <a href="#faq" data-target="faq"><span></span><i>FAQ</i></a>
+  <a href="#contato" data-target="contato"><span></span><i>Contato</i></a>
+</aside>
+
+<!-- floating cta -->
+<a href="#contato" class="float-cta" id="floatCta" aria-label="Fale com o PaTec" data-magnet>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 5h16v11H7l-3 3V5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+    <circle cx="9" cy="10.5" r="1" fill="currentColor"/>
+    <circle cx="12" cy="10.5" r="1" fill="currentColor"/>
+    <circle cx="15" cy="10.5" r="1" fill="currentColor"/>
+  </svg>
+  <span>Fale com a gente</span>
+</a>
+
+<!-- cursor -->
+<div class="cursor" id="cursor"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+<!-- nav -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" data-magnet>
+    <img src="assets/logos/logo-white-round.png" alt="PaTec" />
+    <span>PaTec</span>
+  </a>
+  <nav class="nav__menu" id="siteMenu">
+    <a href="#sobre">Sobre</a>
+    <a href="#missoes">Missões</a>
+    <a href="#oferta">Atuação</a>
+    <a href="#espaco">Espaço</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a href="#contato" class="btn btn--primary nav__cta" data-magnet>
+    <span>Fale conosco</span>
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-controls="siteMenu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- =================== HERO =================== -->
+<section class="hero">
+  <div class="hero__bg">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-bg"></div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__eyebrow reveal">
+      <span class="dot"></span>
+      Parque Tecnológico de Robótica de Brasília
+    </div>
+
+    <h1 class="hero__title pre-anim">
+      <span class="split-line"><span>Robótica</span></span>
+      <span class="split-line"><span>para transformar</span></span>
+      <span class="split-line"><span><em>Brasília.</em></span></span>
+    </h1>
+
+    <p class="hero__lead reveal">
+      O PaTec conecta escolas, startups, estudantes, professores e empresas para
+      democratizar a robótica e impulsionar a inovação educacional em Brasília.
+    </p>
+
+    <div class="hero__proof reveal">
+      <p>
+        Em parceria com a Secretaria de Ciência, Tecnologia e Inovação de Brasília,
+        com tecnologia educacional própria desenvolvida pela Roboowl.
+      </p>
+      <div class="hero__marks" aria-label="Parceiros institucionais do PaTec">
+        <img src="assets/partners/secti-white.webp" alt="Secretaria de Ciência, Tecnologia e Inovação do Distrito Federal" />
+        <img src="assets/partners/eixos-white.webp" alt="Instituto Eixos" />
+      </div>
+    </div>
+
+    <div class="hero__ctas reveal">
+      <a href="#sobre" class="btn btn--primary" data-magnet>
+        <span>Conheça o projeto</span>
+        <svg viewBox="0 0 24 24"><path d="M12 4v16M4 12l8 8 8-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contato" class="btn btn--ghost" data-magnet>
+        <span>Solicitar apresentação</span>
+      </a>
+    </div>
+
+    <div class="hero__stats reveal">
+      <div><strong>1.000+</strong><span>kits em escolas</span></div>
+      <div><strong>5</strong><span>missões</span></div>
+      <div><strong>5</strong><span>públicos conectados</span></div>
+    </div>
+  </div>
+
+  <div class="hero__visual">
+    <div class="ring ring--2"><span class="dot-mark"></span></div>
+    <div class="ring"><span class="dot-mark"></span></div>
+    <img src="assets/logos/logo-white-round.png" alt="" class="hero__logo" />
+    <div class="hero__halo"></div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>rolar</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- marquee -->
+<div class="marquee">
+  <div class="marquee__track">
+    <span>Inovação acessível</span><i>◆</i>
+    <span>Aprendizado mão na massa</span><i>◆</i>
+    <span>Inclusão tecnológica</span><i>◆</i>
+    <span>Protagonismo do aluno</span><i>◆</i>
+    <span>Colaboração</span><i>◆</i>
+    <span>Inovação acessível</span><i>◆</i>
+    <span>Aprendizado mão na massa</span><i>◆</i>
+    <span>Inclusão tecnológica</span><i>◆</i>
+    <span>Protagonismo do aluno</span><i>◆</i>
+    <span>Colaboração</span><i>◆</i>
+  </div>
+</div>
+
+<!-- =================== SOBRE =================== -->
+<section class="sobre" id="sobre">
+  <div class="container grid-2">
+    <div class="sobre__media">
+      <div class="sobre__card">
+        <img src="assets/images/hall-3.webp" alt="PaTec — Conexão entre criatividade e tecnologia" />
+        <div class="sobre__tag"><span class="dot"></span>Brasília · DF</div>
+      </div>
+      <div class="sobre__badge">
+        <strong>PaTec</strong>
+        <span>Parque Tecnológico de Robótica de Brasília</span>
+      </div>
+    </div>
+
+    <div class="sobre__text">
+      <span class="eyebrow reveal">Sobre nós</span>
+      <h2 class="h2 reveal">O ponto de encontro entre <em>educação, robótica e inovação.</em></h2>
+      <p class="reveal">
+        O PaTec é um parque tecnológico voltado ao desenvolvimento de soluções em robótica,
+        tecnologia e educação. Reunimos escolas, startups, estudantes, professores e empresas
+        de tecnologia em um ecossistema pensado para formar, experimentar e gerar impacto real.
+      </p>
+
+      <div class="mvv reveal">
+        <div>
+          <h4>Missão</h4>
+          <p>Promover o acesso à educação tecnológica por meio da robótica.</p>
+        </div>
+        <div>
+          <h4>Visão</h4>
+          <p>Ser referência nacional em robótica educacional.</p>
+        </div>
+        <div>
+          <h4>Valores</h4>
+          <ul>
+            <li>Inovação acessível</li>
+            <li>Aprendizado prático</li>
+            <li>Inclusão tecnológica</li>
+            <li>Protagonismo do aluno</li>
+            <li>Colaboração</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== MISSÕES =================== -->
+<section class="missoes" id="missoes">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Nossas missões</span>
+      <h2 class="h2 reveal">Cinco missões. <em>Uma geração</em> de protagonistas.</h2>
+    </header>
+  </div>
+
+  <div class="missoes__track" id="missoesTrack">
+    <article class="mission" data-num="01">
+      <div class="mission__num">01</div>
+      <h3>Despertar o futuro</h3>
+      <p>Tudo começa com a curiosidade. Transformamos o interesse por tecnologia em
+      aprendizado real, despertando jovens para o universo da inovação, programação e
+      pensamento criativo.</p>
+    </article>
+
+    <article class="mission" data-num="02">
+      <div class="mission__num">02</div>
+      <h3>Conectar conhecimento e oportunidades</h3>
+      <p>Em parceria com a Secretaria de Ciência, Tecnologia e Inovação de Brasília,
+      ampliamos horizontes criando pontes entre alunos, mercado e o futuro digital.</p>
+    </article>
+
+    <article class="mission" data-num="03">
+      <div class="mission__num">03</div>
+      <h3>Desenvolver habilidades do séc. 21</h3>
+      <p>Resolução de problemas, trabalho em equipe, raciocínio lógico e autonomia.
+      Cada projeto é um passo na formação de protagonistas do amanhã.</p>
+    </article>
+
+    <article class="mission" data-num="04">
+      <div class="mission__num">04</div>
+      <h3>Transformar ideias em realidade</h3>
+      <p>Com metodologia prática e inovadora, nossos alunos criam, testam e constroem
+      soluções reais. Tecnologia deixa de ser teoria e vira ferramenta de transformação.</p>
+    </article>
+
+    <article class="mission" data-num="05">
+      <div class="mission__num">05</div>
+      <h3>Impactar vidas e comunidades</h3>
+      <p>Inspiramos uma geração inteira a inovar, empreender e construir um futuro mais
+      tecnológico, inclusivo e sustentável.</p>
+    </article>
+  </div>
+</section>
+
+<!-- =================== OFERTA =================== -->
+<section class="oferta" id="oferta">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Frentes de atuação</span>
+      <h2 class="h2 reveal">Soluções para quem <em>forma, aprende e inova.</em></h2>
+    </header>
+
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="escolas">Para Escolas</button>
+      <button class="tab" data-tab="alunos">Para Alunos</button>
+      <button class="tab" data-tab="startups">Para Startups</button>
+    </div>
+
+    <div class="panels">
+      <div class="panel active" data-panel="escolas">
+        <div class="panel__img"><img src="assets/images/laboratorio.webp" alt="Laboratório PaTec" /></div>
+        <ul class="panel__list">
+          <li><i></i><div><strong>Implantação de robótica educacional</strong><span>Da estruturação inicial à operação do programa em sala.</span></div></li>
+          <li><i></i><div><strong>Metodologia alinhada à BNCC</strong><span>Integração entre tecnologia, currículo e experiência pedagógica.</span></div></li>
+          <li><i></i><div><strong>Formação e capacitação de professores</strong><span>Suporte continuado para equipes docentes e gestão escolar.</span></div></li>
+          <li><i></i><div><strong>Fornecimento de kits próprios</strong><span>Soluções desenvolvidas pela Roboowl para a realidade brasileira.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="panel" data-panel="alunos">
+        <div class="panel__img"><img src="assets/images/maker-3.webp" alt="Alunos prototipando e inovando na sala maker" /></div>
+        <ul class="panel__list">
+          <li><i></i><div><strong>Aulas práticas e dinâmicas</strong><span>Robótica, eletrônica e prototipagem com aprendizagem mão na massa.</span></div></li>
+          <li><i></i><div><strong>Introdução à programação e IoT</strong><span>Do primeiro contato com lógica ao desenvolvimento com ESP32.</span></div></li>
+          <li><i></i><div><strong>Projetos reais</strong><span>Criar, testar e construir soluções aplicadas ao mundo real.</span></div></li>
+          <li><i></i><div><strong>Competições e desafios</strong><span>OBR, MNR, Brasiliense e disputas internas em arenas próprias.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="panel" data-panel="startups">
+        <div class="panel__img"><img src="assets/images/hall-2.webp" alt="Espaço PaTec com foco em projetos e inovação" /></div>
+        <ul class="panel__list">
+          <li><i></i><div><strong>Espaço físico para desenvolvimento e operação</strong><span>Infraestrutura para equipes que criam soluções tecnológicas.</span></div></li>
+          <li><i></i><div><strong>Apoio técnico e educacional</strong><span>Ambiente que aproxima produto, educação e validação prática.</span></div></li>
+          <li><i></i><div><strong>Conexão com escolas e mercado</strong><span>Rede ativa com instituições, alunos, professores e parceiros.</span></div></li>
+          <li><i></i><div><strong>Testes e validação de soluções</strong><span>Um ecossistema real para experimentar, evoluir e ganhar tração.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ESPAÇO FÍSICO =================== -->
+<section class="espaco" id="espaco">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Nosso espaço</span>
+      <h2 class="h2 reveal">Espaços feitos para <em>criar, testar e voar.</em></h2>
+      <p class="section-lead reveal">
+        Sala maker, arenas de robótica, auditório, laboratórios de drones e uma
+        fábrica digital com impressoras 3D Bambu Lab A1 Combo AMS e máquina de corte a laser.
+      </p>
+    </header>
+
+    <div class="espaco__grid">
+      <a class="bento bento--1" data-parallax>
+        <img src="assets/images/auditorio.webp" alt="Auditório PaTec" />
+        <div class="bento__meta"><span>01</span><h4>Auditório</h4><p>Eventos, talks e premiações.</p></div>
+      </a>
+      <a class="bento bento--2" data-parallax>
+        <img src="assets/images/maker-2.webp" alt="Sala Maker" />
+        <div class="bento__meta"><span>02</span><h4>Sala Maker</h4><p>Impressão 3D e corte a laser.</p></div>
+      </a>
+      <a class="bento bento--3" data-parallax>
+        <img src="assets/images/batalha.webp" alt="Arena de robótica" />
+        <div class="bento__meta"><span>03</span><h4>Arenas</h4><p>Sumô, segue-linha e batalha.</p></div>
+      </a>
+      <a class="bento bento--4" data-parallax>
+        <img src="assets/images/drone.webp" alt="Laboratório de drones" />
+        <div class="bento__meta"><span>04</span><h4>Drones</h4><p>Laboratório de voo e testes.</p></div>
+      </a>
+      <a class="bento bento--5" data-parallax>
+        <img src="assets/images/laboratorio-2.webp" alt="Laboratório" />
+        <div class="bento__meta"><span>05</span><h4>Laboratórios</h4><p>Eletrônica, IoT e prototipagem.</p></div>
+      </a>
+      <a class="bento bento--6" data-parallax>
+        <img src="assets/images/hall.webp" alt="Hall do PaTec" />
+        <div class="bento__meta"><span>06</span><h4>Hall & coworking</h4><p>Convivência, exposição, networking.</p></div>
+      </a>
+    </div>
+
+    <div class="gear reveal">
+      <div><strong>Bambu Lab A1 Combo AMS</strong><span>Impressão 3D multi-cor com troca automática de filamento.</span></div>
+      <div><strong>Corte a laser</strong><span>Prototipagem rápida em MDF, acrílico e materiais compostos.</span></div>
+      <div><strong>Drones & arenas</strong><span>Espaço próprio para voo, testes e competições internas.</span></div>
+      <div><strong>Auditório</strong><span>Para imersões, palestras e eventos do ecossistema.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TECNOLOGIA =================== -->
+<section class="tec" id="tecnologia">
+  <div class="container grid-2">
+    <div class="tec__text">
+      <span class="eyebrow reveal">Tecnologia & diferenciais</span>
+      <h2 class="h2 reveal">Tecnologia própria da <em>Roboowl</em> para ampliar acesso.</h2>
+      <p class="reveal">
+        Utilizamos soluções tecnológicas próprias desenvolvidas pela Roboowl, com foco
+        em acessibilidade, usabilidade e inovação educacional. O Kit Arducation foi
+        pensado para facilitar a adoção da robótica desde os primeiros passos.
+      </p>
+
+      <ul class="feat reveal">
+        <li><span>01</span><div><strong>Plug-and-play</strong><p>Do kit ao primeiro projeto em minutos.</p></div></li>
+        <li><span>02</span><div><strong>Programação simplificada</strong><p>Blocos visuais com caminho para código.</p></div></li>
+        <li><span>03</span><div><strong>Funciona offline</strong><p>Sem necessidade de internet em sala.</p></div></li>
+        <li><span>04</span><div><strong>ESP32 + IoT</strong><p>Conectividade quando quiser, integração total.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="tec__stats">
+      <div class="stat-card reveal">
+        <strong>1.000+</strong>
+        <span>kits já utilizados em escolas</span>
+      </div>
+      <div class="stat-card reveal">
+        <strong>100%</strong>
+        <span>funcionamento offline para uso em sala</span>
+      </div>
+      <div class="stat-card reveal">
+        <strong>ESP32</strong>
+        <span>integração com IoT e trilhas de evolução</span>
+      </div>
+      <div class="stat-card reveal">
+        <strong>BNCC</strong>
+        <span>metodologia pensada para a realidade da escola</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== IMPACTO =================== -->
+<section class="impacto" id="impacto">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Impacto, parcerias & participação</span>
+      <h2 class="h2 reveal">Um projeto para <em>impactar vidas e comunidades.</em></h2>
+      <p class="section-lead reveal">
+        O PaTec já está presente em diferentes contextos de formação, criando pontes
+        entre educação, mercado e inovação. Atuamos em parceria com escolas, instituições,
+        empresas de tecnologia e programas de desenvolvimento para fortalecer o ecossistema
+        educacional e tecnológico de Brasília.
+      </p>
+    </header>
+
+    <ol class="method">
+      <li class="reveal">
+        <span class="step">01</span>
+        <h4>Presença em escolas</h4>
+        <p>Levamos educação tecnológica para dentro da rotina escolar com metodologia aplicável.</p>
+      </li>
+      <li class="reveal">
+        <span class="step">02</span>
+        <h4>Formação de protagonistas</h4>
+        <p>Desenvolvemos lógica, criatividade, autonomia, colaboração e resolução de problemas.</p>
+      </li>
+      <li class="reveal">
+        <span class="step">03</span>
+        <h4>Ecossistema fortalecido</h4>
+        <p>Conectamos escolas, startups, professores, estudantes e empresas de tecnologia.</p>
+      </li>
+      <li class="reveal">
+        <span class="step">04</span>
+        <h4>Futuro mais inclusivo</h4>
+        <p>Nosso compromisso é inspirar uma geração a inovar, empreender e transformar realidades.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- =================== NÚMEROS DO IMPACTO =================== -->
+<div class="impact-numbers">
+  <div class="container">
+    <div class="impact-numbers__grid">
+      <div class="impact-n reveal">
+        <strong>5</strong>
+        <span>missões que orientam o projeto</span>
+      </div>
+      <div class="impact-n reveal">
+        <strong>1.000+</strong>
+        <span>kits já utilizados em escolas</span>
+      </div>
+      <div class="impact-n reveal">
+        <strong>4</strong>
+        <span>formas de participação no PaTec</span>
+      </div>
+      <div class="impact-n reveal">
+        <strong>5</strong>
+        <span>segmentos conectados no ecossistema</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =================== DEPOIMENTOS =================== -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Ecossistema conectado</span>
+      <h2 class="h2 reveal">Quem o <em>PaTec conecta</em> todos os dias.</h2>
+    </header>
+
+    <div class="depo__grid">
+      <figure class="depo reveal">
+        <blockquote>
+          Escolas encontram no PaTec uma estrutura completa para implantar robótica
+          educacional com metodologia alinhada à BNCC, formação docente e suporte.
+        </blockquote>
+        <figcaption>
+          <strong>Escolas</strong>
+          <span>Implantação, formação e continuidade pedagógica</span>
+        </figcaption>
+      </figure>
+
+      <figure class="depo reveal">
+        <blockquote>
+          Alunos aprendem na prática, constroem projetos reais, participam de desafios
+          e desenvolvem habilidades essenciais para o século 21.
+        </blockquote>
+        <figcaption>
+          <strong>Alunos</strong>
+          <span>Robótica, programação, IoT e protagonismo</span>
+        </figcaption>
+      </figure>
+
+      <figure class="depo reveal">
+        <blockquote>
+          Startups, professores e empresas de tecnologia encontram um ambiente favorável
+          para validar soluções, conectar conhecimento e ampliar oportunidades.
+        </blockquote>
+        <figcaption>
+          <strong>Startups, professores e empresas</strong>
+          <span>Validação, conexões e fortalecimento do ecossistema</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =================== COMPETIÇÕES =================== -->
+<section class="comp">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Competições & eventos</span>
+      <h2 class="h2 reveal">Competições que formam <em>alunos protagonistas.</em></h2>
+    </header>
+
+    <div class="comp__grid">
+      <article class="comp-card reveal">
+        <h4>OBR</h4>
+        <p>Olimpíada Brasileira de Robótica — maior competição estudantil do país.</p>
+      </article>
+      <article class="comp-card reveal">
+        <h4>MNR</h4>
+        <p>Mostra Nacional de Robótica — pesquisa, projeto e apresentação.</p>
+      </article>
+      <article class="comp-card reveal">
+        <h4>Brasiliense</h4>
+        <p>Competição Brasiliense de Robótica — talentos do DF em ação.</p>
+      </article>
+      <article class="comp-card reveal">
+        <h4>Internas</h4>
+        <p>Segue-linha, sumô e batalha de robôs nas nossas arenas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PARTICIPAR =================== -->
+<section class="join">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow reveal">Faça parte do PaTec</span>
+      <h2 class="h2 reveal">Faça parte do <em>ecossistema.</em></h2>
+    </header>
+
+    <div class="join__grid">
+      <a href="#contato" class="join-card reveal">
+        <span class="num">01</span>
+        <h4>Escola parceira</h4>
+        <p>Implantação, metodologia BNCC e formação continuada.</p>
+        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="#contato" class="join-card reveal">
+        <span class="num">02</span>
+        <h4>Startup residente</h4>
+        <p>Espaço, mentoria e conexão direta com o mercado.</p>
+        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="#contato" class="join-card reveal">
+        <span class="num">03</span>
+        <h4>Aluno</h4>
+        <p>Aulas, projetos reais e participação em competições.</p>
+        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="#contato" class="join-card reveal">
+        <span class="num">04</span>
+        <h4>Investidor / Patrocinador</h4>
+        <p>Contribua para democratizar a robótica no Brasil.</p>
+        <div class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PARCEIROS =================== -->
+<section class="parceiros">
+  <div class="container">
+    <span class="eyebrow reveal" style="text-align:center;display:block">Parceiros & apoio institucional</span>
+    <div class="parceiros__row reveal">
+      <img src="assets/partners/secti-white.webp" alt="SECTI-DF" />
+      <img src="assets/partners/eixos-white.webp" alt="Instituto Eixos" />
+      <img src="assets/partners/secti.webp" alt="SECTI / GDF" />
+    </div>
+  </div>
+</section>
+
+<!-- =================== FAQ =================== -->
+<section class="faq" id="faq">
+  <div class="container grid-2">
+    <div class="faq__head">
+      <span class="eyebrow reveal">Perguntas frequentes</span>
+      <h2 class="h2 reveal">Suas dúvidas, <em>respondidas.</em></h2>
+      <p class="reveal">Respostas curtas e diretas para escolas, alunos, startups e
+      patrocinadores. Não encontrou o que procurava? <a href="#contato">Fale com a gente.</a></p>
+    </div>
+
+    <ul class="faq__list reveal">
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          <span>Como uma escola pode adotar o PaTec?</span>
+          <i></i>
+        </button>
+        <div class="faq__a"><p>Iniciamos com um diagnóstico gratuito e desenhamos um plano de
+        implantação sob medida — kits Arducation, formação de professores, trilhas alinhadas
+        à BNCC e suporte contínuo. Falamos com escolas públicas, privadas e redes.</p></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          <span>Os kits funcionam sem internet?</span>
+          <i></i>
+        </button>
+        <div class="faq__a"><p>Sim. O Arducation foi pensado para a realidade brasileira:
+        funciona 100% offline, é robusto, plug-and-play e tem programação por blocos visuais
+        com caminho para código real (C/C++ no ESP32).</p></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          <span>Como funcionam as residências de startup no PaTec?</span>
+          <i></i>
+        </button>
+        <div class="faq__a"><p>Oferecemos espaço físico, mentoria, acesso à infraestrutura
+        (sala maker, arenas, drones, laboratórios) e conexão direta com escolas, professores e
+        gestores públicos — um ambiente real de validação para edtechs e hardtechs.</p></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          <span>Quais competições os alunos participam?</span>
+          <i></i>
+        </button>
+        <div class="faq__a"><p>OBR, MNR, Competição Brasiliense de Robótica e desafios
+        internos do PaTec (sumô, segue-linha, batalha). Preparação técnica, mentoria
+        e logística por nossa equipe.</p></div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          <span>Como apoiar o projeto como patrocinador?</span>
+          <i></i>
+        </button>
+        <div class="faq__a"><p>Trabalhamos com cotas de patrocínio que viabilizam a chegada do
+        PaTec em mais escolas e comunidades. Entre em contato pelo formulário e enviamos um
+        material institucional completo.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =================== CONTATO =================== -->
+<section class="contato" id="contato">
+  <div class="container grid-2">
+    <div class="contato__text">
+      <span class="eyebrow reveal">Contato</span>
+      <h2 class="h2 reveal">Vamos apresentar o <em>PaTec para você?</em></h2>
+      <p class="reveal">Entre em contato para implantar robótica educacional, conhecer
+      o espaço, apoiar o projeto ou solicitar o material institucional.</p>
+
+      <div class="contato__channel reveal">
+        <strong>Atendimento institucional</strong>
+        <p>
+          O contato do projeto acontece por e-mail, Instagram e visitas agendadas
+          no espaço do PaTec, em Brasília.
+        </p>
+      </div>
+
+      <ul class="contato__list reveal">
+        <li>
+          <span>E-mail</span>
+          <a href="mailto:contato@patecbrasilia.com.br">contato@patecbrasilia.com.br</a>
+        </li>
+        <li>
+          <span>Instagram</span>
+          <a href="https://instagram.com/patecbrasilia" target="_blank" rel="noopener">@patecbrasilia</a>
+        </li>
+        <li>
+          <span>Endereço</span>
+          <a href="https://maps.google.com/?q=SCS+quadra+04,+2+andar,+Edif%C3%ADcio+Zarife,+Asa+Sul,+Bras%C3%ADlia+DF" target="_blank" rel="noopener">
+            SCS quadra 04, 2º andar<br/>Edifício Zarife — Asa Sul, Brasília/DF
+          </a>
+        </li>
+      </ul>
+
+      <div class="contato__actions reveal">
+        <a href="mailto:contato@patecbrasilia.com.br?subject=Contato%20institucional%20-%20PaTec" class="btn btn--primary btn--sm">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          <span>Falar por e-mail</span>
+        </a>
+        <a href="https://instagram.com/patecbrasilia" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+          <svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm10 2.5h.01M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Enviar DM no Instagram</span>
+        </a>
+      </div>
+
+      <div class="contato__materiais reveal">
+        <p>Quer receber a apresentação institucional do PaTec?</p>
+        <a href="mailto:contato@patecbrasilia.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20apresenta%C3%A7%C3%A3o%20institucional%20-%20PaTec" class="btn btn--ghost btn--sm" aria-label="Solicitar apresentação institucional do PaTec por e-mail">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          <span>Solicitar apresentação institucional</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contato__form reveal" id="contactForm" onsubmit="return sendMail(event)">
+      <!-- Formspree: troque o action abaixo pelo endpoint Formspree da sua conta -->
+      <p class="contato__form-intro">
+        Prefere detalhar a demanda com calma? O envio abaixo monta a mensagem e abre
+        seu e-mail automaticamente.
+      </p>
+      <label>
+        <span>Seu nome</span>
+        <input type="text" name="nome" required autocomplete="name" />
+      </label>
+      <label>
+        <span>E-mail</span>
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>
+        <span>Perfil</span>
+        <select name="perfil">
+          <option>Escola</option>
+          <option>Aluno / Responsável</option>
+          <option>Startup</option>
+          <option>Investidor / Patrocinador</option>
+          <option>Outro</option>
+        </select>
+      </label>
+      <label>
+        <span>Mensagem</span>
+        <textarea name="mensagem" rows="4" required></textarea>
+      </label>
+      <label class="lgpd-label">
+        <input type="checkbox" name="lgpd" required />
+        <span class="lgpd-text">
+          Concordo com o tratamento dos meus dados para fins de contato, conforme a
+          <abbr title="Lei Geral de Proteção de Dados">LGPD</abbr>
+          (Lei 13.709/2018). Nenhum dado é compartilhado com terceiros.
+        </span>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary" data-magnet id="formBtn">
+          <span>Abrir e-mail com a mensagem</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note" id="formNote">O envio acontece pelo seu aplicativo de e-mail.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logos/logo-white-h.png" alt="PaTec" />
+        <p>Parque Tecnológico de Robótica de Brasília — democratizando o acesso à tecnologia.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <h5>Site</h5>
+          <a href="#sobre">Sobre</a>
+          <a href="#missoes">Missões</a>
+          <a href="#oferta">Atuação</a>
+          <a href="#espaco">Espaço</a>
+        </div>
+        <div>
+          <h5>Ecossistema</h5>
+          <a href="#oferta">Escolas</a>
+          <a href="#oferta">Alunos</a>
+          <a href="#oferta">Startups</a>
+          <a href="#contato">Patrocinadores</a>
+        </div>
+        <div>
+          <h5>Contato</h5>
+          <a href="mailto:contato@patecbrasilia.com.br">contato@patecbrasilia.com.br</a>
+          <a href="https://instagram.com/patecbrasilia" target="_blank" rel="noopener">@patecbrasilia</a>
+          <a>SCS quadra 04, Edifício Zarife — Brasília/DF</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> PaTec · Parque Tecnológico de Robótica de Brasília</span>
+      <span>Feito em Brasília com tecnologia própria.</span>
+    </div>
+  </div>
+  <div class="footer__huge">PaTec</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="script.js?v=20260423d"></script>
+</body>
+</html>
