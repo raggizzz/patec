@@ -921,6 +921,19 @@ main { overflow-x: clip; }
   font-size: 15px;
   transition: border-color .3s, background .3s;
 }
+.contato__form select {
+  color-scheme: dark;
+  color: #fff;
+  background-color: rgba(12,18,38,.98);
+}
+.contato__form select option {
+  color: #0A1128;
+  background: #fff;
+}
+.contato__form select option:checked {
+  color: #fff;
+  background: #2255BF;
+}
 .contato__form input:focus,
 .contato__form select:focus,
 .contato__form textarea:focus {
