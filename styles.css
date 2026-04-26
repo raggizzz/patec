@@ -928,6 +928,9 @@ main { overflow-x: clip; }
 }
 .contato__form textarea { resize: vertical; min-height: 120px; }
 .contato__form button { justify-self: start; margin-top: 4px; }
+.contato__form .btn--primary,
+.contato__form .btn--primary span,
+.contato__form .btn--primary svg { color: #fff; }
 
 /* ================== FOOTER ================== */
 .footer { background: var(--bg-2); border-top: 1px solid var(--line); position: relative; overflow: hidden; }
@@ -1134,10 +1137,11 @@ main { overflow-x: clip; }
 .faq__q i {
   width: 26px; height: 26px; flex: 0 0 26px;
   border-radius: 50%; border: 1px solid var(--line);
-  position: relative; transition: transform .35s var(--ease), border-color .35s;
+  position: relative; display: grid; place-items: center;
+  transition: transform .35s var(--ease), border-color .35s;
 }
 .faq__q i::before, .faq__q i::after {
-  content: ""; position: absolute; inset: 0; margin: auto;
+  content: ""; position: absolute;
   background: var(--secondary); border-radius: 1px;
   width: 10px; height: 1.5px; top: 50%; left: 50%; transform: translate(-50%, -50%);
   transition: transform .35s var(--ease), opacity .35s;
